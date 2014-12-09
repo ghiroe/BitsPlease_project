@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#EE56C5FF">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="150dp"
+        android:id="@+id/button_yellow"
+        android:background="@drawable/balloons_unpopped_yellow"
+        android:clickable="true"
+        android:layout_marginRight="65dp"
+        android:layout_below="@+id/button_red"
+        android:layout_toLeftOf="@+id/button_orange"
+        android:layout_toStartOf="@+id/button_orange" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:id="@+id/button_blue"
+        android:layout_toStartOf="@+id/balloon_title"
+        android:layout_toLeftOf="@+id/balloon_title"
+        android:clickable="true"
+        android:background="@drawable/balloons_unpopped_blue"
+        android:layout_alignTop="@+id/button_orange"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/bingbong"
+        android:background="@drawable/bingbongw_hat"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/red_pop"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:id="@+id/button_orange"
+        android:background="@drawable/balloons_unpopped_orange"
+        android:layout_toStartOf="@+id/bingbong"
+        android:layout_toLeftOf="@+id/bingbong"
+        android:layout_centerVertical="true"
+        android:clickable="true"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:id="@+id/button_red"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/balloons_unpopped_red"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/balloon_title"
+        android:text="title"
+        android:textSize="14pt"
+        android:textColor="#ff0000ff"
+        android:inputType="none"
+        android:layout_alignTop="@+id/button_green"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:id="@+id/button_green"
+        android:layout_toStartOf="@+id/button_yellow"
+        android:layout_toLeftOf="@+id/button_yellow"
+        android:layout_alignEnd="@+id/bingbong"
+        android:layout_alignRight="@+id/bingbong"
+        android:background="@drawable/balloons_unpopped_green"
+        android:layout_alignBottom="@+id/button_red"
+        android:clickable="true"/>
+
+
+</RelativeLayout>
